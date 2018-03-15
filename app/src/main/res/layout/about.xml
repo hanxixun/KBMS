@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/chat_nav"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/head_blue_background"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/message_flip"
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/head_title_wrapper_background"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/head_flip" />
+            h
+
+            <TextView
+                android:id="@+id/chat_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.19"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="8dip"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/chat_nav"
+            android:background="@drawable/about"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="#20333333" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

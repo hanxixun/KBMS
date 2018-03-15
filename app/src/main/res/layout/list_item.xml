@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/desktop_top_avatar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/widget_default_head" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ABCDEFG"
+                android:textColor="@color/sc_gray" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_box"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@+id/tv_time"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:layout_weight="0.19"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="16sp" />
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout" />
+
+
+</RelativeLayout>

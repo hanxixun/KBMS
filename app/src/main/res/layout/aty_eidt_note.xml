@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bk"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bk"
+                android:drawableLeft="@drawable/icom_img"
+                android:hint="@string/input_title"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#000000">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="358dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bk"
+                android:drawableTop="@drawable/heart"
+                android:gravity="top"
+                android:hint="@string/input_main"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" />
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"></ListView>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/btn_submit" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_edit_cancel"/>
+
+        <Button
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_photograph" />
+
+        <Button
+            android:id="@+id/btnAddVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_video" />
+    </LinearLayout>
+</LinearLayout>

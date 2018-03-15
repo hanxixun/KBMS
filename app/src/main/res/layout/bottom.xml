@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="@drawable/bottom"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/id_tab_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_home_img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_home_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textColor="#3D51B4"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_classification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_classification_img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_classification_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:textColor="#3D51B4"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_group_img"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_group_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="团队"
+            android:textColor="#3D51B4"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_honor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_honor_img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_honor_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="荣誉"
+            android:textColor="#3D51B4"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_me_img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_me_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="我的"
+            android:textColor="#3D51B4"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

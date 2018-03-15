@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/flipper_head_blue_background"
+            android:orientation="horizontal" 
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/message_flip"
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/flipper_head_title_wrapper_background"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/flipper_head_flip" />
+
+            <ImageView
+                android:layout_width="2px"
+                android:layout_height="24dip"
+                android:layout_gravity="center"
+                android:src="@drawable/flipper_head_separator" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dip"
+                android:text="Message Center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/message_edit"
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/flipper_head_title_wrapper_background"
+                android:text="编辑"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/message_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/message_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_notes"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabsbar_background"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Notes"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_news"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabsbar_background"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="News"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/rb_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabsbar_background"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Contacts"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tabsbar_background"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Setting"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

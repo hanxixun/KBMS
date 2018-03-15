@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="group_name">
+        <item>Fast</item>
+        <item>Map</item>
+        <item>Collect</item>
+        <item>Chat</item>
+    </string-array>
+    <string-array name="group_name1_chlid">
+        <item>Repository</item>
+        <item>CloudNotes</item>
+        <item>Test1--3</item>
+    </string-array>
+    <string-array name="group_name2_chlid">
+        <item>Private Map</item>
+        <item>Test2--2</item>
+        <item>Test2--3</item>
+    </string-array>
+    <string-array name="group_name3_chlid">
+        <item>Test3--1</item>
+        <item>Test3--2</item>
+        <item>Test3--3</item>
+    </string-array>
+    <string-array name="group_name4_chlid">
+        <item>Public communication space</item>
+        <item>Test4--2</item>
+        <item>Test4--3</item>
+    </string-array>
+
+    <string-array name="desktop_list_head_strings">
+        <item>Common</item>
+        <item>Operation</item>
+    </string-array>
+    <string-array name="desktop_list_item_favorite_strings">
+        <item>Events </item>
+        <item>Message</item>
+        <item>Personal letter</item>
+        <item>Friends</item>
+        <item>Homepage</item>
+        <item>Location</item>
+        <item>Look for</item>
+        <item>Applications</item>
+    </string-array>
+    <string-array name="desktop_list_item_action_strings">
+        <item>Options</item>
+        <item>Log in/Log out</item>
+    </string-array>
+</resources>

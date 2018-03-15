@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Remind Setting" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="message_key"
+        android:summary="Receive message, comments, or friend request to remind"
+        android:title="Notifications" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="message_key"
+        android:summary="Quits the program after can still receive information notice"
+        android:title="ReceiveMessage" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="message_key"
+        android:summary="Receive alerts when the vibration"
+        android:title="Vibrate" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="message_key"
+        android:summary="Receive alerts when lit LED lights"
+        android:title="LED" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="message_key"
+        android:summary="Receive alerts when the rings"
+        android:title="Ring notifications" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="message_key"
+        android:summary="00:00-7:00 Closed notification"
+        android:title="Anti disturb mode" />
+
+    <RingtonePreference
+        android:dependency="message_key"
+        android:ringtoneType="all"
+        android:showDefault="true"
+        android:showSilent="true"
+        android:title="Ringing tone" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:summary="Remind login according to update my address book"
+        android:title="The address book to remind" />
+
+    <PreferenceCategory android:title="System settings" />
+
+    <Preference android:title="Screen brightness" />
+
+    <PreferenceCategory android:title="Flow management" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:title="New pictures show" />
+
+    <PreferenceCategory android:title="Cache Settings" />
+
+    <CheckBoxPreference android:title="Empty On Exit" />
+
+    <Preference android:title="Immediately clear the cache" />
+
+    <PreferenceCategory android:title="Other" />
+
+    <Preference android:title="Feedback and comments" />
+
+    <Preference android:title="Help" />
+
+    <Preference
+        android:summary="KB Android 2.0.0"
+        android:title="About" />
+    <Preference android:title="Check for update" />
+
+</PreferenceScreen>
